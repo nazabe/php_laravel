@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP SQL Query Runner - Select Database</title>
+    <title>SQL Query Runner</title>
     <style>
         /* (Keep the same CSS styles as before) */
         body {
             font-family: sans-serif;
             line-height: 1.6;
             margin: 20px;
+        }
+        .header{
+            text-align: center;
+            font-size: 3rem;
         }
         .container {
             max-width: 900px;
@@ -27,7 +31,10 @@
         }
         textarea[name="query"] {
             width: 100%;
-            height: 150px;
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 180px;
+            max-height: 50vh;
             font-size: 16px;
             padding: 10px;
             box-sizing: border-box;
@@ -86,11 +93,7 @@
 <body>
 
 <div class="container">
-    <h1>SQL Query Runner</h1>
-
-    <div class="warning">
-        <strong>Security Warning:</strong> This tool is for demonstration purposes only on a trusted, local environment. Never expose such functionality directly on production systems.
-    </div>
+    <h1 class="header">SQL Query Runner</h1>
 
     <?php
         // --- Database Configuration ---

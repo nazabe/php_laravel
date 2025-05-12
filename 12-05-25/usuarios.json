@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "telefono": "3625353653",
+    "activo": true,
+    "direccion": {"calle":"Alberdi","altura":"140"}
+  },
+  {
+    "id": "1",
+    "nombre": "Nazareno",
+    "apellido": "Beauvais",
+    "telefono": "3625353635",
+    "activo": true,
+    "direccion": {"calle":"Colon","altura":"253"}
+  }
+]

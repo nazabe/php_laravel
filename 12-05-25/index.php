@@ -16,5 +16,14 @@
     }
 
     echo '<pre>' . htmlspecialchars(json_encode($users, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)) . '</pre>';
-    
+
+    foreach ($users as $user) {
+        echo "<li>" . $user['nombre'] . " (ID: " . $user['id'] . ")</li>";
+    }
+
+    $new_user = [
+        "id"=>3,
+        "nombre"
+    ]
+
 ?>

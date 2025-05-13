@@ -1,5 +1,9 @@
 <?php
 
+$server = "localhost";
+$user   = "root";
+$pass   = "";
+
 $file = './usuarios.json';
 $json_data = file_get_contents($file);
 
@@ -49,4 +53,7 @@ if (file_put_contents($file, $json_final) === false) {
 }
 
 echo '<pre>' . htmlspecialchars($json_final) . '</pre>';
+
+
+
 ?>
